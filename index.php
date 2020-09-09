@@ -22,8 +22,7 @@
     <body>
         <p>
             <?php
-                function Uptime()
-                {
+                function Uptime() {
                     $ut = strtok(exec("cat /proc/uptime"), ".");
                     $days = sprintf("%2d", $ut / (3600 * 24));
                     $hours = sprintf("%2d", ($ut % (3600 * 24)) / 3600);
