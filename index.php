@@ -28,7 +28,7 @@
                     $hours = sprintf("%2d", ($ut % (3600 * 24)) / 3600);
                     $min = sprintf("%2d", (($ut % (3600 * 24)) % 3600) / 60);
                     $sec = sprintf("%2d", (($ut % (3600 * 24)) % 3600) % 60);
-                    return [$days, $hours, $min, $sec];
+                    return '[$days, $hours, $min, $sec]';
                 }
 
                 $IP = file_get_contents("http://icanhazip.com");
