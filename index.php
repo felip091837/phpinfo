@@ -21,6 +21,7 @@
     </head>
     <body>
         <p>
+            <?php
                 $IP = file_get_contents("http://icanhazip.com");
                 echo "IP: " . $IP;
                 echo "<br>";
